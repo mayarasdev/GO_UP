@@ -1,0 +1,148 @@
+```css
+/* ==============================
+   PÁGINA DE SERVIÇOS - GO UP
+============================== */
+
+.services {
+    padding: 70px 8%;
+    background-color: #f8fafc;
+    min-height: 80vh;
+}
+
+/* Título da página */
+
+.services .section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.services .section-title h1 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.services .section-title p {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* Organização dos cards */
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cards individuais */
+
+.service-card {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+/* Ícones */
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Títulos dos serviços */
+
+.service-card h2 {
+    font-size: 1.4rem;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* Descrições */
+
+.service-card p {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Botão de orçamento */
+
+.service-card .btn {
+    display: inline-block;
+    margin-top: auto;
+    padding: 12px 22px;
+
+    background-color: #2563eb;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease;
+}
+
+.service-card .btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+    .services-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .services {
+        padding: 60px 5%;
+    }
+}
+
+/* Celulares */
+
+@media (max-width: 600px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        padding: 45px 6%;
+    }
+
+    .services .section-title h1 {
+        font-size: 2rem;
+    }
+
+    .services .section-title p {
+        font-size: 1rem;
+    }
+
+    .service-card {
+        padding: 30px 22px;
+    }
+}
+```
