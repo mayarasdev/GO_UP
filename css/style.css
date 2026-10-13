@@ -1,11 +1,7 @@
-<<<<<<< Updated upstream
-/* Configurações Globais */
-=======
-/* 
+/* ========================================
    CONFIGURAÇÕES GERAIS
- */
+======================================== */
 
->>>>>>> Stashed changes
 * {
     margin: 0;
     padding: 0;
@@ -18,14 +14,10 @@ body {
     color: #1f2937;
 }
 
-<<<<<<< Updated upstream
-/* Cabeçalho */
-=======
-/* 
+/* ========================================
    CABEÇALHO
-*/
+======================================== */
 
->>>>>>> Stashed changes
 header {
     background-color: #ffffff;
     padding: 20px 60px;
@@ -38,11 +30,15 @@ nav {
     align-items: center;
 }
 
+/* Logo */
+
 .logo {
     font-size: 28px;
     font-weight: bold;
     color: #2563eb;
 }
+
+/* Menu */
 
 nav ul {
     list-style: none;
@@ -61,33 +57,25 @@ nav ul li a:hover {
     color: #2563eb;
 }
 
-<<<<<<< Updated upstream
-/* Seção Principal (Hero) */
-=======
-/* 
+/* ========================================
    SEÇÃO PRINCIPAL
- */
+======================================== */
 
->>>>>>> Stashed changes
 .hero {
     min-height: 75vh;
     display: flex;
     align-items: center;
     padding: 80px 60px;
-    background: linear-gradient(135deg, #eff6ff, #eef2ff);
+
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #eef2ff
+    );
 }
 
 .hero-content {
     max-width: 700px;
-}
-
-.hero-subtitle {
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #2563eb;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
 }
 
 .hero h1 {
@@ -104,27 +92,23 @@ nav ul li a:hover {
     color: #4b5563;
 }
 
-<<<<<<< Updated upstream
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-=======
-/* 
+/* ========================================
    BOTÃO
- */
->>>>>>> Stashed changes
+======================================== */
 
-/* Botões */
 .btn {
     display: inline-block;
+
     padding: 15px 30px;
+
     background-color: #2563eb;
     color: #ffffff;
+
     text-decoration: none;
     font-weight: bold;
+
     border-radius: 8px;
+
     transition: 0.3s;
 }
 
@@ -133,155 +117,16 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-<<<<<<< Updated upstream
-.btn-secondary {
-    background-color: transparent;
-    color: #2563eb;
-    border: 2px solid #2563eb;
-}
-=======
-/* 
+/* ========================================
    RODAPÉ
- */
->>>>>>> Stashed changes
+======================================== */
 
-.btn-secondary:hover {
-    background-color: #2563eb;
-    color: #ffffff;
-}
-
-.btn-light {
-    background-color: #ffffff;
-    color: #2563eb;
-}
-
-.btn-light:hover {
-    background-color: #f3f4f6;
-}
-
-/* Serviços */
-.services {
-    padding: 90px 60px;
-    background-color: #ffffff;
-}
-
-.section-title {
-    max-width: 700px;
-    margin: 0 auto 50px;
-    text-align: center;
-}
-
-.section-title span {
-    color: #2563eb;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.section-title h2 {
-    margin: 15px 0;
-    font-size: 38px;
-    color: #111827;
-}
-
-.section-title p {
-    color: #6b7280;
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-.services-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.service-card {
-    padding: 35px 30px;
-    background-color: #f8fafc;
-    border-radius: 12px;
-    border: 1px solid #e5e7eb;
-    transition: 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.service-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    margin-bottom: 15px;
-    font-size: 21px;
-    color: #111827;
-}
-
-.service-card p {
-    color: #6b7280;
-    line-height: 1.6;
-}
-
-/* Seção Sobre */
-.about-home {
-    padding: 100px 60px;
-    background-color: #f5f7fb;
-}
-
-.about-content {
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about-content > span {
-    color: #2563eb;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.about-content h2 {
-    margin: 15px 0 25px;
-    font-size: 40px;
-    color: #111827;
-}
-
-.about-content p {
-    margin-bottom: 18px;
-    color: #4b5563;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-/* Chamada para Orçamento (CTA) */
-.cta {
-    padding: 90px 30px;
-    background: linear-gradient(135deg, #2563eb, #4f46e5);
-    text-align: center;
-    color: #ffffff;
-}
-
-.cta h2 {
-    margin-bottom: 15px;
-    font-size: 38px;
-}
-
-.cta p {
-    margin-bottom: 30px;
-    font-size: 18px;
-}
-
-/* Rodapé */
 footer {
     background-color: #111827;
     color: #ffffff;
+
     text-align: center;
+
     padding: 25px;
 }
 
@@ -289,21 +134,12 @@ footer p {
     font-size: 14px;
 }
 
-<<<<<<< Updated upstream
-/* Responsividade */
-@media (max-width: 900px) {
-    .services-container {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-    }
-}
-=======
-/* 
+/* ========================================
    RESPONSIVIDADE
- */
->>>>>>> Stashed changes
+======================================== */
 
 @media (max-width: 768px) {
+
     header {
         padding: 20px;
     }
@@ -331,12 +167,10 @@ footer p {
     .hero p {
         font-size: 18px;
     }
-<<<<<<< Updated upstream
-=======
 }
-/* 
+/* ========================================
    SUBTÍTULO DO HERO
- */
+======================================== */
 
 .hero-subtitle {
     display: inline-block;
@@ -350,9 +184,9 @@ footer p {
 }
 
 
-/* 
+/* ========================================
    BOTÕES DO HERO
- */
+======================================== */
 
 .hero-buttons {
     display: flex;
@@ -372,9 +206,9 @@ footer p {
 }
 
 
-/* 
+/* ========================================
    SEÇÃO DE SERVIÇOS
- */
+======================================== */
 
 .services {
     padding: 90px 60px;
@@ -410,9 +244,9 @@ footer p {
 }
 
 
-/* 
+/* ========================================
    CARDS DE SERVIÇOS
- */
+======================================== */
 
 .services-container {
     max-width: 1100px;
@@ -459,9 +293,9 @@ footer p {
 }
 
 
-/* 
+/* ========================================
    SEÇÃO SOBRE
- */
+======================================== */
 
 .about-home {
     padding: 100px 60px;
@@ -501,9 +335,9 @@ footer p {
 }
 
 
-/* 
+/* ========================================
    CHAMADA PARA ORÇAMENTO
-*/
+======================================== */
 
 .cta {
     padding: 90px 30px;
@@ -541,9 +375,9 @@ footer p {
 }
 
 
-/* 
+/* ========================================
    RESPONSIVIDADE DOS SERVIÇOS
- */
+======================================== */
 
 @media (max-width: 900px) {
 
@@ -555,27 +389,38 @@ footer p {
 }
 
 
-/* 
+/* ========================================
    RESPONSIVIDADE MOBILE
- */
+======================================== */
 
 @media (max-width: 768px) {
->>>>>>> Stashed changes
 
     .hero-buttons {
         justify-content: center;
     }
 
-    .services, .about-home, .cta {
+    .services {
         padding: 70px 25px;
     }
 
-    .section-title h2, .about-content h2, .cta h2 {
+    .section-title h2 {
         font-size: 30px;
     }
+
+    .about-home {
+        padding: 70px 25px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .cta {
+        padding: 70px 25px;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
 }
-
-    
- 
-
-
