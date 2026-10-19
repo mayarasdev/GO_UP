@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar Orçamento | GO UP</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/orcamento.css">
+</head>
+
+<body>
+
+    <div id="global-header"></div>
+
+    <main class="budget-main">
+
+        <section class="budget-hero">
+            <span class="budget-tag">VAMOS TIRAR SUA IDEIA DO PAPEL</span>
+
+            <h1>Solicite seu <span>orçamento</span></h1>
+
+            <p>
+                Conte um pouco sobre seu projeto.
+                Vamos conhecer suas necessidades e buscar uma solução adequada.
+            </p>
+        </section>
+
+        <section class="budget-section">
+
+            <div class="budget-intro">
+                <h2>Como podemos ajudar?</h2>
+
+                <p>
+                    Preencha as informações abaixo para apresentar
+                    sua ideia à equipe GO UP.
+                </p>
+
+                <div class="budget-note">
+                    <h3>Uma solução para sua necessidade</h3>
+                    <p>
+                        Cada projeto tem suas particularidades.
+                        Conte os detalhes para que possamos compreender
+                        melhor a sua ideia.
+                    </p>
+                </div>
+            </div>
+
+            <form class="budget-form" id="budget-form">
+
+                <div class="form-group">
+                    <label for="budget-nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="budget-nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="budget-email">E-mail</label>
+                    <input
+                        type="email"
+                        id="budget-email"
+                        name="email"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="empresa">Empresa (opcional)</label>
+                    <input
+                        type="text"
+                        id="empresa"
+                        name="empresa"
+                        placeholder="Nome da sua empresa"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Qual serviço você procura?</label>
+
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="site">Site institucional</option>
+                        <option value="desktop">Sistema desktop</option>
+                        <option value="digital">Outra solução digital</option>
+                        <option value="orientacao">Preciso de orientação</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="orcamento">Faixa de orçamento prevista</label>
+
+                    <select id="orcamento" name="orcamento" required>
+                        <option value="">Selecione uma faixa</option>
+                        <option value="ate-1000">Até R$ 1.000</option>
+                        <option value="1000-3000">De R$ 1.000 a R$ 3.000</option>
+                        <option value="3000-5000">De R$ 3.000 a R$ 5.000</option>
+                        <option value="acima-5000">Acima de R$ 5.000</option>
+                        <option value="indefinido">Ainda não defini</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="prazo">Prazo desejado</label>
+
+                    <select id="prazo" name="prazo" required>
+                        <option value="">Selecione um prazo</option>
+                        <option value="urgente">O mais breve possível</option>
+                        <option value="30-dias">Até 30 dias</option>
+                        <option value="60-dias">Até 60 dias</option>
+                        <option value="flexivel">Tenho flexibilidade</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descreva seu projeto</label>
+
+                    <textarea
+                        id="descricao"
+                        name="descricao"
+                        rows="6"
+                        placeholder="Quais funcionalidades você precisa?"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Solicitar orçamento</button>
+
+                <p id="budget-feedback" role="status"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="../js/layout.js"></script>
+
+</body>
+</html>

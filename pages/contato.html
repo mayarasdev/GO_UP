@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | GO UP</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho global -->
+    <div id="global-header"></div>
+
+    <main class="contact-main">
+
+        <section class="contact-hero">
+            <span class="contact-tag">FALE CONOSCO</span>
+
+            <h1>Vamos conversar sobre sua <span>ideia?</span></h1>
+
+            <p>
+                Estamos prontos para conhecer seu projeto e
+                encontrar soluções tecnológicas para o seu negócio.
+            </p>
+        </section>
+
+        <section class="contact-section">
+
+            <div class="contact-info">
+                <h2>Entre em contato</h2>
+
+                <p>
+                    Preencha o formulário e conte um pouco sobre
+                    o que você precisa.
+                </p>
+
+                <div class="contact-info-item">
+                    <h3>Nosso compromisso</h3>
+                    <p>Ouvir suas necessidades e buscar a melhor solução.</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <h3>Nossos serviços</h3>
+                    <p>Sites institucionais, sistemas desktop e soluções digitais.</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="site">Desenvolvimento de site</option>
+                        <option value="sistema">Sistema desktop</option>
+                        <option value="duvida">Dúvidas e informações</option>
+                        <option value="outro">Outro assunto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Sua mensagem</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        placeholder="Conte como podemos ajudar..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <p id="form-feedback" role="status"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Layout global -->
+    <script src="../js/layout.js"></script>
+
+    <!-- Comportamento do formulário -->
+    <script src="../js/contato.js"></script>
+
+</body>
+</html>

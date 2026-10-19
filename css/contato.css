@@ -1,0 +1,209 @@
+
+/* ========================================
+   PÁGINA CONTATO - GO UP
+   Estilos exclusivos desta página
+======================================== */
+
+.contact-main {
+    background-color: #f5f7fb;
+    color: #1f2937;
+}
+
+.contact-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Apresentação */
+
+.contact-hero {
+    padding: 80px 25px;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #eef2ff
+    );
+}
+
+.contact-hero h1 {
+    max-width: 800px;
+    margin: 0 auto 20px;
+
+    color: #111827;
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+.contact-hero h1 span {
+    color: #2563eb;
+}
+
+.contact-hero p {
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: #4b5563;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Conteúdo e informações */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 45px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 75px 25px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    color: #111827;
+    font-size: 32px;
+}
+
+.contact-info > p {
+    margin-bottom: 30px;
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+.contact-info-item {
+    margin-bottom: 25px;
+    padding-left: 18px;
+    border-left: 3px solid #2563eb;
+}
+
+.contact-info-item h3 {
+    margin-bottom: 8px;
+    color: #1d4ed8;
+}
+
+.contact-info-item p {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+/* Formulário */
+
+.contact-form {
+    padding: 32px;
+
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.08);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    color: #1f2937;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+    color: #1f2937;
+    font: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #bfdbfe;
+    border-color: #2563eb;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+}
+
+#form-feedback {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-hero {
+        padding: 60px 22px;
+    }
+
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-hero p {
+        font-size: 16px;
+    }
+
+    .contact-section {
+        padding: 45px 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 23px 18px;
+    }
+}
